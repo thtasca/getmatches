@@ -11,7 +11,7 @@ const postsContainer = document.querySelector("#posts-container")
 
 async function loadTeams() {
     try {
-        const response = await fetch('https://opensheet.elk.sh/1WFDSerRQ05xNVEdbOBEfkyNLghdEXz4UvDJMS0COWZg/slots');
+        const response = await fetch('https://opensheet.elk.sh/1_GzjxfPEpIQbPur7uQlW_h0K51Mbd0W8GtEVgQ3mLuc/slots');
         const teamsData = await response.json();
 
         // Converter array [{slot: "3", team: "Nome"}] em objeto { "3": "Nome" }
