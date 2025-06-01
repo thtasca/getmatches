@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Página de Pesquisa</title>
+</head>
+<body class="results">
+    <section>
+        <div class="header">
+            <h1>Get match result</h1> 
+            <button id="copy-button" class="hidden">GET RESULTS</button>
+            <button id="toggleServer" data-server="steam">LIVE</button>
+        </div>
+        <form id="searchForm">
+            <label for="id">Macth ID:</label>
+            <input type="text" id="id" name="id"><br>
+        </form>
+        <table class="leaderboard">
+            <thead>
+                <tr>
+                    <th>Slot</th>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Win</th>
+                    <th>Place</th>
+                    <th>Kills</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody id="posts-container">
+                <!-- Resultados vão aqui -->
+            </tbody>
+        </table>
+    </section>
+    <div id="copy-message">Copied</div>
+</body>
+</html>

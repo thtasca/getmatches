@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body, section, form, .header, .teamsSlots, #teamForm {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #aaa;
+    background: #121212;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+#teamForm {
+    margin-top: 50px;
+}
+
+section, #teamForm {
+    width: 800px;
+    flex-direction: column;
+}
+
+form, fieldset {
+    width: 100%;
+    align-items: center;
+    border: 0;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+fieldset, fieldset div {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+fieldset div:nth-child(1),
+fieldset div:nth-child(2) {
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+fieldset div:nth-child(1) {
+    width: 15%;
+}
+
+fieldset div:nth-child(2) {
+    width: 85%;
+    margin-right: 0;
+}
+
+fieldset div:nth-child(1) input {
+    width: 30%;
+}
+
+fieldset div:nth-child(2) input {
+    width: 85%;
+    text-align: left;
+}
+
+.teamsSlots div {
+    display: flex;
+    align-items: center;
+}
+
+.teamsSlots div input {
+    width: 20%;
+}
+
+.teamsSlots div label {
+    margin-right: 20px;
+}
+
+#searchForm label {
+    width: 15%;
+}
+
+.results input {
+    width: calc(85% - 10px);
+    padding: 10px;
+    background: #333;
+    border: 2px solid #222;
+    color: #aaa;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.teams input {
+    padding: 10px;
+    background: #333;
+    border: 2px solid #222;
+    color: #aaa;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.header {
+    margin: 0 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 10px 30px;
+    background: #aaa;
+    color: #333;
+    border: 0;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#toggleServer {
+    width: 130px;
+    padding: 10px 0;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+.leaderboard {
+    width: 800px;
+    margin: 20px 0 10px;
+    text-align: left;
+}
+
+table tr td:nth-child(1),
+table tr td:nth-child(2),
+table tr td:nth-child(4),
+table tr td:nth-child(5),
+table tr td:nth-child(6),
+table tr td:nth-child(7),
+table tr th:nth-child(1),
+table tr th:nth-child(2),
+table tr th:nth-child(4),
+table tr th:nth-child(5),
+table tr th:nth-child(6), 
+table tr th:nth-child(7) {
+    width: 10%;
+}
+
+table tr td:nth-child(3),
+table tr th:nth-child(3) {
+    width: 40%;
+}
+
+thead {
+    height: 50px;
+}
+
+tbody tr {
+    height: 35px;
+}
+
+table tr td span {
+    width: 30px;
+}
+
+table tr td p {
+    margin: 0;
+    padding-right: 20px
+}
+
+#copy-message {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 999;
+}
+
+#copy-message.show {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
